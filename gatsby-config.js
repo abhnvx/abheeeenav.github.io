@@ -6,7 +6,11 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Abhinav Gupta`,
+    siteTitleAlt: `Abhinav Gupta`,
+    siteHeadline: `Abhinav Gupta`,
+    siteDescription: `I love to build and market products.`,
+    siteImage: "/banner.png",
   },
   plugins: [
     {
@@ -26,11 +30,11 @@ module.exports = {
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/abhnvx`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/abhinavvx`,
           },
         ],
       },
@@ -38,16 +42,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        trackingId: "UA-182376999-1",
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Abhinav Gupta`,
+        short_name: `Abhinav Gupta`,
+        description: `I build stuff and share my learnings`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
